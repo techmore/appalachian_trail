@@ -1,0 +1,15 @@
+title: "AT Near 18947"
+tagline: "Appalachian Trail & Camping Guide for Couples Near Pipersville, PA"
+description: "A beginner-friendly guide to Appalachian Trail access points and overnight camping spots near Pipersville, PA (18947) — perfect for couples looking for a quick nature escape."
+url: "https://YOUR_USERNAME.github.io"
+baseurl: "/appalachian_trail"
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

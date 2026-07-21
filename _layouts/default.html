@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+      <span class="tagline">{{ site.tagline }}</span>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/spots/' | relative_url }}">Camping Spots</a>
+        <a href="{{ '/newbie-guide/' | relative_url }}">Newbie Guide</a>
+        <a href="{{ '/about/' | relative_url }}">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Built for couples exploring the Appalachian Trail near Pipersville, PA. Not affiliated with the NPS or ATC.</p>
+      <p>Always check official park websites for latest conditions, fees, and reservations.</p>
+    </div>
+  </footer>
+</body>
+</html>
